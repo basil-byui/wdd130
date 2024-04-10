@@ -1,0 +1,63 @@
+
+@import url(https://fonts.google.com/share?selection.family=Libre+Franklin:ital,wght@0,100..900;1,100..900);
+
+body {
+    font-family: var(--paragraph-font);
+    max-width: 960px;
+    padding: 20px;
+
+}
+
+:root {
+    --primary-color:#2D3142;
+    --secondary-color:#80AB82;
+    --accent1-color:#C2E1C2;
+    --accent2-color:#BAC7BE;
+
+    --heading-font:'https://fonts.google.com/share?selection.family=Libre+Franklin:ital,wght@0,100..900;1,100..900',serif;
+    --paragraph-font:'https://fonts.google.com/share?selection.family=Libre+Franklin:ital,wght@0,100..900;1,100..900', non serif;
+
+    --nav-background-color: #80AB82;
+    --nav-link-color:#C2E1C2 ;
+    --nav-hover-link-color: #2D3142;
+    --nav-hover-background-color:#7DCD85 ;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+}
+
+
+header {
+    padding: 20px;
+    background-color: var(--accent1-color);
+}
+
+
+p {
+    padding: 25px;
+}
+
+nav {
+    background-color: var(--nav-background-color);
+    font-size: 1.2rem;
+    display: flex;
+}
+
+nav a {
+    display: block;
+    color: var(--nav-link-color);
+    text-decoration: none;
+    padding: 1rem;
+}
+
+nav a:link, nav a:visited{
+    color: var(--nav-hover-link-color);
+}
+
+nav a:hover{
+    color: var(--nav-hover-link-color);
+    background-color: var(--nav-hover-background-color);
+}

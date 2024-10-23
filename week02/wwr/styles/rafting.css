@@ -11,147 +11,152 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    /* This will creates a smooth transition between primary and accent colors in a diagonal direction. */
     background: linear-gradient(135deg, var(--primary-color), var(--accent1-color), var(--accent2-color));
-    margin: 10px;
+    margin: 0 auto;
     padding: 20px;
     max-width: 1200px;
-    margin: 0 auto;
     color: var(--font-color);
     line-height: 1.6;
 }
 
-
-/* Heading and paragraph styling */
-
-h1, h2 {
-    font-family: 'Roboto', sans-serif;
-    color: var(--primary-color);
-}
-
-h1 {
-    font-size: 3em;
-    font-weight: 100;
-    margin-bottom: 20px;
-}
-
-h2 {
-    font-size: 2em;
-    font-weight: 400;
-    color: var(--accent1-color);
-}
-
-p {
-    font-weight: 400;
-    color: var(--font-color);
-    margin-bottom: 1.5em;
-    line-height: 1.5;
-}
-
+/* Header Styling */
 header {
-    display: flex;
-    justify-content: space-between;
-    /* align-item: center; */
-    padding: 10px;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    padding: 10px 20px;
     background-color: var(--secondary-color);
+    color: var(--font-color);
 }
 
+header .logo img {
+    height: 80px;
+    width: 100px;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    gap: 30px;
+}
 
 nav a {
     text-decoration: none;
-    color: var(--font-color);
-    margin-right: 20px;
+    color: white;
+    font-size: large;
 }
 
-nav a :hover {
+nav a:hover {
     color: var(--accent2-color);
+    font-weight: 900;
 }
 
-/* Hero Section styling */
-.hero{
-    position:relative;
+/* Hero Section */
+.hero {
     text-align: center;
     margin-bottom: 40px;
-
 }
 
-
 .hero img {
-    display: block;
     width: 100%;
     height: auto;
+    margin-top: 20px;
 }
 
 .hero h1 {
-    position: absolute;
-    right: 0;
-    top: 0;
-    transform: translate(-5%, -20%);
+    font-size: 3em;
     color: var(--primary-color);
-    font-size: 3.5em;
-    font-weight: 500;
+}
+
+.hero p {
+    margin-top: 20px;
+    font-size: 1.2em;
+}
+
+/* History Section */
+.history {
+    background-color: var(--accent2-color);
+    padding: 20px;
+}
+
+.history-h2{
+    text-align: center;
+}
+
+.history-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    
     
 }
 
-.hero article img {
-    float: right;
-    margin-left: 20px;
-    width: 150px;
-    height: auto;
+.history-content p {
+    width: 60%;
+    order: 3;
+}
+
+
+.history-content img {
+    width: 35%;
     border-radius: 10px;
+    order: 2;
+
 }
 
-article h2 {
-    color: var(--accent-color);
-}
-
-/* Section Styling */
-section {
+/* Adventure Section */
+.adventure {
+    background-color: var(--accent2-color);
+    margin-top: 40px;
     margin-bottom: 40px;
 }
 
-section h2 {
-    color: var(--accent-color);
+.adventure-h2{
+    text-align: center;
 }
 
-section img{
-    width: 100%;
-    max-width: 250px;
-    margin: 10px;
+.adventure-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    text-align: center;
+}
+
+.adventure-grid img {
+    width: 90%;
+    height: auto;
+    
+
+}
+
+figure {
+    margin: 0;
+}
+
+figcaption {
+    font-weight: bold;
+    margin-top: 10px;
+    
+    
 }
 
 /* Footer Styling */
-.copyright{
-    color: var( --accent2-color);
-}
-
 footer {
     background-color: var(--secondary-color);
     color: white;
     padding: 20px;
+    margin: auto;
     text-align: center;
 }
 
-footer p {
-    margin: 0;
-}
-
-footer nav a img {
+footer .sociallinks a img {
     width: 40px;
-    height: auto;
-    margin: 0 10px;
     filter: grayscale(100%);
-    transition: filter 0.3s;
-    float: right;
+    transition: filter 1.5s ;
 }
 
-footer nav a img:hover {
-    filter: grayscale(0);
+footer .sociallinks a img:hover {
+    filter: grayscale(0%);
 }
-
-footer nav a {
-    text-decoration: none;
-}
-
-
     

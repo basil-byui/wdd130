@@ -95,12 +95,14 @@ input [type="checkbox"] {
 /*Style the button as you see fit along with the button:hover pseudo-class.  */
 /* button { */
 .submit-button {
-    margin: 1rem;
-    padding: 10px 15px;
+    margin: 0 auto;
+    padding: 0;
     background: rgb(204, 219, 240);
     font-weight: 600;
-    width: 80px;; 
+    width: 80px; 
     height: 50px; 
+    display: block;
+    
     
 }    
 

@@ -82,7 +82,7 @@ nav a:hover {
     float: right;
     margin-left: 20px;
     width: 150px;
-    height: 500;
+    height: 500px;
     border-radius: 10px;
 }
 
@@ -270,7 +270,7 @@ figcaption {
     width: 100%;
     height: 700px;
     margin-top: 20px;
-    border-radius: 10px;  /*for rounding image corners*/
+    
 }
 
 

@@ -82,7 +82,7 @@ nav a:hover {
     float: right;
     margin-left: 20px;
     width: 150px;
-    height: auto;
+    height: 500;
     border-radius: 10px;
 }
 
@@ -235,10 +235,263 @@ figure {
 
 figcaption {
     font-weight: bold;
+    margin-top: 10px;   
+}
+
+/* Trips and Contact Page additions */
+
+.hero-trip {
+    position: relative;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.hero-trip h1{
+    position: absolute;
+    right: 0;
+    top: -10px;
+    transform: translate(-20%, -20%);
+    color: var(--background-color);
+    font-size: 3.5em;
+    font-weight: 500;
+}
+
+.hero-trip p{
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: var(--background-color);
+    transform: translate(-10%, 300%);
+
+}
+
+.hero-trip img {
+    display: block;
+    width: 100%;
+    height: 700px;
+    margin-top: 20px;
+    border-radius: 10px;  /*for rounding image corners*/
+}
+
+
+/* About Section */
+.adventure-trip {
+    background-color: var(--accent2-color);
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.adventure-h2 {
+    text-align: center;
+    color: var(--primary-color);
+    font-size: 2em;
+}
+
+.adventure-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* For two columns in the grid */
+    gap: 20px;
+    text-align: center;
+}
+
+.adventure-grid figure {
+    background-color: var(--background-color);
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.adventure-grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.adventure-grid figcaption {
+    font-weight: bold;
     margin-top: 10px;
-    
+    color: var(--primary-color);
+}
+
+/* Home Section */
+
+/* Newsletter Form Section */
+.Newsletter-form {
+    background-color: #f9f9f9;
+    background: #ddd;
+    padding: 30px;
+    max-width: 400px;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.Newsletter-form h3 {
+    font-size: 24px;
+    color: var(--font-color);
+    margin-bottom: 15px;
+}
+
+.Newsletter-form label {
+    display: block;
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+.Newsletter-form input[type="text"],
+.Newsletter-form input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+
+.Newsletter-form input[type="text"]:focus,
+.Newsletter-form input[type="email"]:focus {
+    border-color: var(--secondary-color);
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.2);
     
 }
+
+.Newsletter-form .subscribe-button {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    margin-top: 20px;
+}
+
+.Newsletter-form .subscribe-button:hover{
+    background-color: var(--accent1-color);
+}
+
+.adventur-h2 {
+    text-align: center;
+    color: var(--primary-color);
+    font-size: 2em;
+}
+
+.adventur-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* For two columns in the grid */
+    gap: 20px;
+    text-align: center;
+}
+
+.adventur-grid figure {
+    background-color: var(--background-color);
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.adventur-grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.adventur-grid figcaption {
+    font-weight: bold;
+    margin-top: 10px;
+    color: var(--primary-color);
+}
+
+/* Style the container */
+.View_Here_Butoon {
+    text-align: center; /* Center-align the button */
+    margin: 20px 0; /* Add some vertical spacing */
+}
+
+/* Style the button */
+.View_Here_Butoon .button {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: var(--primary-color); /* Button background color */
+    color: var(--background-color); /* Text color */
+    font-size: 16px;
+    text-decoration: none; /* Remove underline */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s ease; /* Smooth transition for hover */
+}
+
+/* Hover effect */
+.View_Here_Butoon .button:hover {
+    background-color: var(--accent1-color); /* Darker shade for hover */
+}
+
+/* Trips Section */
+
+.adventurr-h2 {
+    text-align: center;
+    color: var(--primary-color);
+    font-size: 2em;
+}
+
+.adventurr-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* For two columns in the grid */
+    gap: 20px;
+    text-align: center;
+}
+
+.adventurr-grid figure {
+    background-color: var(--background-color);
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.adventurr-grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.adventurr-grid figcaption {
+    font-weight: bold;
+    margin-top: 10px;
+    color: var(--primary-color);
+}
+
+/* Table styling */
+.trips-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 18px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+
+}
+
+.trips-table th, .trips-table td {
+    padding: 12px;
+    text-align: left;
+
+}
+
+.trips-table th {
+    background-color:var(--primary-color);
+    color: #ffffff;
+}
+
+.trips-table tr:hover {
+    background-color: var(--accent2-color)
+} 
 
 /* Footer Styling */
 footer {
